@@ -19,8 +19,7 @@ class _AccueilPageState extends State<AccueilPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Titre principal
-              Text(
+              const Text(
                 'Bienvenue sur Planète',
                 style: TextStyle(
                   fontSize: 34,
@@ -28,17 +27,15 @@ class _AccueilPageState extends State<AccueilPage> {
                   color: Colors.black87,
                 ),
               ),
-              SizedBox(height: 10),
-
-              // Description secondaire
-              Text(
+              const SizedBox(height: 10),
+              const Text(
                 'Découvrez nos fonctionnalités exclusives !',
                 style: TextStyle(
                   fontSize: 18,
                   color: Colors.black54,
                 ),
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
 
               // Grille avec 4 blocs stylés 2x2
               Expanded(
@@ -61,13 +58,10 @@ class _AccueilPageState extends State<AccueilPage> {
       ),
     );
   }
-
-  // Fonction pour créer des blocs stylés avec icône et texte
   Widget _buildBlock(IconData icon, String label, Color color) {
     return GestureDetector(
       onTap: () {
         if (label == 'Explorer') {
-          // Ouvre la page de la bibliothèque
           Navigator.push(
             context,
             MaterialPageRoute(
@@ -75,7 +69,6 @@ class _AccueilPageState extends State<AccueilPage> {
             ),
           );
         } else {
-          // Ajoutez d'autres actions ici pour les autres blocs
           print('$label pressé');
         }
       },
@@ -83,7 +76,7 @@ class _AccueilPageState extends State<AccueilPage> {
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(20),
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               color: Colors.black12,
               blurRadius: 10,
@@ -96,11 +89,11 @@ class _AccueilPageState extends State<AccueilPage> {
           children: [
             // Icône stylée
             Icon(icon, size: 50, color: color),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             // Texte du bloc
             Text(
               label,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
                 color: Colors.black87,

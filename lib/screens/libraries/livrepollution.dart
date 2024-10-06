@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LivrePollutionPage extends StatelessWidget {
-  const LivrePollutionPage({Key? key}) : super(key: key);
+  const LivrePollutionPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,14 +12,14 @@ class LivrePollutionPage extends StatelessWidget {
             expandedHeight: 300,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/logo.jpg',
+                'assets/images/climat.jpg',
                 fit: BoxFit.cover,
               ),
             ),
             pinned: true,
             backgroundColor: Colors.teal,
-            title: Text(
-              'Le Climat en Péril',
+            title: const Text(
+              'Changement climatique',
               style: TextStyle(
                   color: Colors.black,
                   fontSize: 24,
@@ -46,7 +46,7 @@ class LivrePollutionPage extends StatelessWidget {
                     'Le changement climatique désigne les variations à long terme de la '
                     'température et des conditions météorologiques...',
                   ),
-                  _buildImage('assets/images/logo.jpg'), // Image de pollution
+                 // _buildImage('assets/images/logo.jpg'),
                   const SizedBox(height: 20),
                   _buildSectionTitle('Les causes'),
                   _buildSectionContent(
@@ -64,8 +64,7 @@ class LivrePollutionPage extends StatelessWidget {
                     '- l’accroissement de la gravité des tempêtes et pluies\n'
                     '- les sécheresses fortes...',
                   ),
-                  _buildImage(
-                      'assets/images/logo.jpg'), // Image sur la banquise
+                  //_buildImage('assets/images/logo.jpg'),
                   _buildSectionTitle('Que faire ?'),
                   _buildSectionContent(
                     'Il faut agir sans attendre :\n'
@@ -100,7 +99,7 @@ class LivrePollutionPage extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: Text(
         title,
-        style: TextStyle(
+        style: const TextStyle(
           fontSize: 22,
           fontWeight: FontWeight.bold,
           color: Colors.teal,
@@ -114,7 +113,7 @@ class LivrePollutionPage extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 20),
       child: Text(
         content,
-        style: TextStyle(fontSize: 16, color: Colors.black87),
+        style: const TextStyle(fontSize: 16, color: Colors.black87),
       ),
     );
   }
@@ -125,8 +124,8 @@ class LivrePollutionPage extends StatelessWidget {
       child: Image.asset(
         imagePath,
         fit: BoxFit.cover,
-        height: 200, // Ajustez la hauteur de l'image selon vos besoins
-        width: double.infinity, // Pour prendre toute la largeur
+        height: 200,
+        width: double.infinity,
       ),
     );
   }
