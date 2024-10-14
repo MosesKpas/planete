@@ -1,101 +1,110 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-class ProfilPage extends StatelessWidget {
+class ProfilPage extends StatefulWidget {
   const ProfilPage({super.key});
+
+  @override
+  _ProfilPageState createState() => _ProfilPageState();
+}
+
+class _ProfilPageState extends State<ProfilPage> {
+  // Contrôleurs pour les champs de texte
+  final TextEditingController _usernameController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+
+  bool _isEditingUsername = false;
+  bool _isEditingEmail = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadProfile(); // Charger les données sauvegardées au démarrage
+  }
+
+  Future<void> _loadProfile() async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _usernameController.text = prefs.getString('username') ?? 'User';
+      _emailController.text = prefs.getString('email') ?? 'mailUser@gmail.com';
+    });
+  }
+
+  Future<void> _saveProfile() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('username', _usernameController.text);
+    await prefs.setString('email', _emailController.text);
+
+    // Afficher un message de succès
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Profil sauvegardé : ${_usernameController.text}, ${_emailController.text}')),
+    );
+
+    // Quitter le mode édition
+    setState(() {
+      _isEditingUsername = false;
+      _isEditingEmail = false;
+    });
+  }
+
+  @override
+  void dispose() {
+    _usernameController.dispose();
+    _emailController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Mon Profil'),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Image de profil
-              Center(
-                child: CircleAvatar(
-                  radius: 50,
-                  backgroundImage: NetworkImage(
-                      'https://www.w3schools.com/w3images/avatar2.png'),
-                ),
+              // Nom de l'utilisateur
+              _buildEditableField(
+                controller: _usernameController,
+                label: 'Nom d\'utilisateur',
+                isEditing: _isEditingUsername,
+                onEdit: () {
+                  setState(() {
+                    _isEditingUsername = true;
+                  });
+                },
               ),
               const SizedBox(height: 20),
-
-              // Nom de l'utilisateur
-              const Text(
-                'Jo',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
-              ),
-              const SizedBox(height: 10),
 
               // Email de l'utilisateur
-              const Text(
-                'Jo@inOrder.com',
-                style: TextStyle(
-                  fontSize: 18,
-                  color: Colors.black54,
-                ),
+              _buildEditableField(
+                controller: _emailController,
+                label: 'Email',
+                isEditing: _isEditingEmail,
+                onEdit: () {
+                  setState(() {
+                    _isEditingEmail = true;
+                  });
+                },
               ),
               const SizedBox(height: 30),
 
-              // Progression de lecture
-              _buildProgressSection(
-                icon: Icons.book,
-                title: 'Lecture en cours',
-                progress: 0.75, // 75% de progression
-                subtitle: '3 livres en cours',
-              ),
-              const SizedBox(height: 20),
-
-              // Nombre de catégories visitées
-              _buildProgressSection(
-                icon: Icons.category,
-                title: 'Catégories Visitées',
-                progress: 0.50, // 50% de progression
-                subtitle: '12/24 catégories',
-              ),
-              const SizedBox(height: 20),
-
-              // Score au jeu
-              _buildProgressSection(
-                icon: Icons.videogame_asset,
-                title: 'Score aux jeux',
-                progress: 0.80, // 80% de score
-                subtitle: '1200 points',
-              ),
-              const SizedBox(height: 20),
-
-              // Score élevé dans une catégorie spécifique
-              _buildProgressSection(
-                icon: Icons.star,
-                title: 'Meilleur Score',
-                progress: 0.95, // 95% de score élevé
-                subtitle: 'Quiz rapide : 1500 points',
-              ),
-              const SizedBox(height: 30),
-
-              // Bouton de déconnexion
+              // Bouton de sauvegarde du profil
               Center(
                 child: ElevatedButton(
-                  onPressed: () {
-                    // Action de déconnexion à définir
-                  },
+                  onPressed: _saveProfile,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor:
-                        Colors.red.shade700, // Couleur du bouton de déconnexion
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 40, vertical: 12),
+                    backgroundColor: Colors.blue, // Couleur du bouton de sauvegarde
+                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 12),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                   child: const Text(
-                    'Déconnexion',
+                    'Sauvegarder le Profil',
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.white,
@@ -110,63 +119,36 @@ class ProfilPage extends StatelessWidget {
     );
   }
 
-  // Widget pour la section de progression avec icône, titre et barre de progression
-  Widget _buildProgressSection({
-    required IconData icon,
-    required String title,
-    required double progress,
-    required String subtitle,
+  // Widget pour les champs éditables avec icône de crayon
+  Widget _buildEditableField({
+    required TextEditingController controller,
+    required String label,
+    required bool isEditing,
+    required VoidCallback onEdit,
   }) {
-    return Card(
-      elevation: 5,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Row(
-          children: [
-            // Icône
-            CircleAvatar(
-              radius: 25,
-              backgroundColor: Colors.green.shade100,
-              child: Icon(icon, size: 30, color: Colors.green),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        // Champ de texte
+        Expanded(
+          child: TextField(
+            controller: controller,
+            decoration: InputDecoration(
+              labelText: label,
+              border: OutlineInputBorder(),
+              enabled: isEditing,
             ),
-            const SizedBox(width: 20),
-
-            // Contenu de la section
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    title,
-                    style: const TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 10),
-                  Text(
-                    subtitle,
-                    style: const TextStyle(
-                      fontSize: 14,
-                      color: Colors.black54,
-                    ),
-                  ),
-                  const SizedBox(height: 10),
-                  // Barre de progression
-                  LinearProgressIndicator(
-                    value: progress,
-                    backgroundColor: Colors.grey.shade200,
-                    color: Colors.green.shade700,
-                  ),
-                ],
-              ),
-            ),
-          ],
+            readOnly: !isEditing,
+          ),
         ),
-      ),
+        const SizedBox(width: 10),
+
+        // Icône de stylot
+        IconButton(
+          icon: const Icon(Icons.edit),
+          onPressed: onEdit,
+        ),
+      ],
     );
   }
 }

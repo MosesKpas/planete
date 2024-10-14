@@ -1,0 +1,485 @@
+[
+  {
+    "question": "Principale cause du changement climatique ?",
+    "options": ["Gaz à effet de serre", "Déforestation", "Énergie nucléaire", "Pollution"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Débutant"
+  },
+  {
+    "question": "Source d'énergie renouvelable la plus utilisée ?",
+    "options": ["Solaire", "Éolien", "Hydroélectricité", "Géothermique"],
+    "indexReponseCorrect": 2,
+    "theme": "Énergie",
+    "niveau": "Débutant"
+  },
+  {
+    "question": "Gaz émis lors de la combustion des fossiles ?",
+    "options": ["Oxygène", "Dioxyde de carbone", "Azote", "Hélium"],
+    "indexReponseCorrect": 1,
+    "theme": "Environnement",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "question": "Activité humaine qui cause la déforestation ?",
+    "options": ["Agriculture", "Urbanisation", "Exploitation minière", "Pêche"],
+    "indexReponseCorrect": 0,
+    "theme": "Biodiversité",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "question": "Que désigne la biodiversité ?",
+    "options": ["Variété des espèces", "Variations climatiques", "Évolution des terres", "Énergies renouvelables"],
+    "indexReponseCorrect": 0,
+    "theme": "Biodiversité",
+    "niveau": "Débutant"
+  },
+  {
+    "question": "Gaz responsable de l'effet de serre ?",
+    "options": ["Dioxyde de carbone", "Méthane", "Oxyde nitreux", "CFC"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Débutant"
+  },
+  {
+    "question": "Exemple d'énergie fossile ?",
+    "options": ["Gaz naturel", "Solaire", "Éolienne", "Géothermique"],
+    "indexReponseCorrect": 0,
+    "theme": "Énergie",
+    "niveau": "Débutant"
+  },
+  {
+    "question": "Facteur principal de la perte de biodiversité ?",
+    "options": ["Pollution", "Déforestation", "Espèces invasives", "Changement climatique"],
+    "indexReponseCorrect": 1,
+    "theme": "Biodiversité",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "question": "Conséquence grave de la déforestation ?",
+    "options": ["Gaz à effet de serre", "Réduction des terres cultivables", "Augmentation de la biodiversité", "Réduction des océans"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "question": "Source de pollution de l'air en ville ?",
+    "options": ["Véhicules", "Usines", "Déchets", "Centrales nucléaires"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Débutant"
+  },
+  {
+    "question": "Impact du plastique sur les océans ?",
+    "options": ["Augmentation de la salinité", "Pollution des sols", "Destruction des écosystèmes marins", "Réduction de la biodiversité terrestre"],
+    "indexReponseCorrect": 2,
+    "theme": "Biodiversité",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "question": "Problème environnemental lié à l'eau ?",
+    "options": ["Pollution des nappes", "Réchauffement des océans", "Destruction des habitats", "Déforestation"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "question": "Qu'est-ce que l'empreinte carbone ?",
+    "options": ["CO2 produit", "Eau utilisée", "Déchets produits", "Terres utilisées"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Débutant"
+  },
+  {
+    "question": "Source principale d'énergie pour l'électricité ?",
+    "options": ["Solaire", "Charbon", "Hydroélectricité", "Nucléaire"],
+    "indexReponseCorrect": 1,
+    "theme": "Énergie",
+    "niveau": "Débutant"
+  },
+  {
+    "question": "Conséquence du réchauffement climatique ?",
+    "options": ["Élévation des mers", "Augmentation de la biodiversité", "Réduction des gaz", "Extension des glaciers"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "question": "Type d'énergie produite par le vent ?",
+    "options": ["Géothermique", "Solaire", "Éolienne", "Nucléaire"],
+    "indexReponseCorrect": 2,
+    "theme": "Énergie",
+    "niveau": "Débutant"
+  },
+  {
+    "question": "Panneaux solaires transforment quoi ?",
+    "options": ["Combustion de gaz", "Effet de serre", "Énergie solaire en électricité", "Réaction nucléaire"],
+    "indexReponseCorrect": 2,
+    "theme": "Énergie",
+    "niveau": "Débutant"
+  },
+  {
+    "question": "Principal danger des centrales nucléaires ?",
+    "options": ["Accidents", "Pollution de l'eau", "Consommation excessive", "Déforestation"],
+    "indexReponseCorrect": 0,
+    "theme": "Énergie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "question": "Gaz responsables de l'effet de serre ?",
+    "options": ["Oxygène et azote", "Dioxyde de carbone et méthane", "Ozone et oxygène", "Azote et dioxyde de carbone"],
+    "indexReponseCorrect": 1,
+    "theme": "Environnement",
+    "niveau": "Débutant"
+  },
+  {
+    "question": "Plus grand réservoir de carbone ?",
+    "options": ["Océans", "Forêts", "Sols", "Atmosphère"],
+    "indexReponseCorrect": 1,
+    "theme": "Environnement",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "question": "Impact de l'agriculture intensive ?",
+    "options": ["Amélioration biodiversité", "Déforestation et perte de biodiversité", "Augmentation biodiversité marine", "Réduction des gaz"],
+    "indexReponseCorrect": 1,
+    "theme": "Biodiversité",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "question": "Principale source de pollution de l'eau ?",
+    "options": ["Plastique", "Pétrole", "Produits chimiques", "Textiles"],
+    "indexReponseCorrect": 2,
+    "theme": "Environnement",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "question": "Qu'est-ce que le développement durable ?",
+    "options": ["Exploitation des ressources", "Respect de l'environnement, économie et société", "Croissance démographique", "Consommation illimitée"],
+    "indexReponseCorrect": 1,
+    "theme": "Environnement",
+    "niveau": "Débutant"
+  },
+  {
+    "question": "Principal défi de la transition énergétique ?",
+    "options": ["Réduire consommation", "Réduire coûts", "Passer aux renouvelables", "Augmenter efficacité"],
+    "indexReponseCorrect": 2,
+    "theme": "Énergie",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "question": "Objectif de l'accord de Paris ?",
+    "options": ["Réduire émissions", "Promouvoir nucléaire", "Augmenter consommation eau", "Accélérer déforestation"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "question": "Qu'est-ce qu'un écosystème ?",
+    "options": ["Communauté vivante et environnement", "Culture agricole", "Politique énergétique", "Mode de vie durable"],
+    "indexReponseCorrect": 0,
+    "theme": "Biodiversité",
+    "niveau": "Débutant"
+  },
+  {
+    "question": "Conséquence de la fonte des glaces ?",
+    "options": ["Élévation du niveau de la mer", "Réintroduction des espèces", "Extension des forêts", "Augmentation biodiversité"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Intermédiaire"
+  },
+  {
+    "question": "Qu'est-ce que le recyclage ?",
+    "options": ["Rendre l'eau potable", "Réutiliser déchets pour nouveaux produits", "Augmenter production", "Exploiter ressources naturelles"],
+    "indexReponseCorrect": 1,
+    "theme": "Environnement",
+    "niveau": "Débutant"
+  },
+  {
+    "question": "Quelle est la principale conséquence de l'acidification des océans ?",
+    "options": ["Réchauffement des eaux", "Blanchiment des coraux", "Réduction de la biodiversité terrestre", "Augmentation de la salinité"],
+    "indexReponseCorrect": 1,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel pays a le plus grand potentiel d'énergie solaire non exploité ?",
+    "options": ["Australie", "Sahara occidental", "Inde", "États-Unis"],
+    "indexReponseCorrect": 1,
+    "theme": "Énergie",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quelle technique est utilisée pour capturer et stocker le CO2 afin de réduire les émissions ?",
+    "options": ["Biocapture", "Système de décarbonation", "Captage et stockage du carbone (CSC)", "Énergie de fusion"],
+    "indexReponseCorrect": 2,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel type de pollution est le plus difficile à éliminer des cours d'eau ?",
+    "options": ["Microplastiques", "Produits chimiques toxiques", "Déchets organiques", "Métaux lourds"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Combien de degrés de réchauffement climatique a l'Accord de Paris pour objectif de ne pas dépasser ?",
+    "options": ["1°C", "1.5°C", "2°C", "3°C"],
+    "indexReponseCorrect": 1,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel secteur est responsable de la majorité des émissions mondiales de CO2 ?",
+    "options": ["Industrie", "Transports", "Agriculture", "Production d'électricité"],
+    "indexReponseCorrect": 3,
+    "theme": "Énergie",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quelle forme de pollution contribue à la disparition des abeilles ?",
+    "options": ["Pesticides", "Pollution lumineuse", "Pollution sonore", "Gaz à effet de serre"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est le principal gaz responsable du trou dans la couche d'ozone ?",
+    "options": ["Méthane", "Dioxyde de soufre", "CFC (Chlorofluorocarbures)", "Dioxyde de carbone"],
+    "indexReponseCorrect": 2,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est le principal défi lié à la capture et au stockage du carbone ?",
+    "options": ["Faible efficacité", "Manque de technologie", "Coût élevé", "Nécessité de vastes espaces"],
+    "indexReponseCorrect": 2,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est le plus grand contributeur à l'augmentation du niveau de la mer ?",
+    "options": ["Fonte des glaciers", "Fonte de la banquise arctique", "Expansion thermique des océans", "Fonte de l'Antarctique"],
+    "indexReponseCorrect": 2,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quelles sont les principales énergies renouvelables utilisées dans le monde ?",
+    "options": ["Solaire, éolienne, hydroélectricité", "Nucléaire, solaire, éolienne", "Hydroélectricité, charbon, géothermie", "Éolienne, charbon, gaz naturel"],
+    "indexReponseCorrect": 0,
+    "theme": "Énergie",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est l'impact principal de l'agriculture intensive sur les sols ?",
+    "options": ["Réduction de la biodiversité", "Appauvrissement en nutriments", "Augmentation de l'érosion", "Acidification des sols"],
+    "indexReponseCorrect": 1,
+    "theme": "Biodiversité",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est le pays le plus avancé dans l'utilisation de l'énergie géothermique ?",
+    "options": ["Islande", "États-Unis", "Nouvelle-Zélande", "Japon"],
+    "indexReponseCorrect": 0,
+    "theme": "Énergie",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quelle est la principale cause de la disparition des récifs coralliens ?",
+    "options": ["Pêche excessive", "Acidification des océans", "Réchauffement des eaux", "Pollution plastique"],
+    "indexReponseCorrect": 2,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quelle méthode est la plus prometteuse pour produire de l'hydrogène sans émissions de CO2 ?",
+    "options": ["Électrolyse alimentée par énergies renouvelables", "Combustion de biomasse", "Réacteurs nucléaires", "Gazéification du charbon"],
+    "indexReponseCorrect": 0,
+    "theme": "Énergie",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est le principal défi des technologies de batteries actuelles ?",
+    "options": ["Durée de vie limitée", "Difficulté à recycler", "Faible capacité de stockage", "Temps de recharge long"],
+    "indexReponseCorrect": 1,
+    "theme": "Énergie",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel phénomène provoque la diminution rapide des espèces dans les forêts tropicales ?",
+    "options": ["Chasse illégale", "Déforestation", "Espèces invasives", "Changements climatiques"],
+    "indexReponseCorrect": 1,
+    "theme": "Biodiversité",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel pays est le plus grand consommateur d'eau douce au monde ?",
+    "options": ["Inde", "Chine", "États-Unis", "Brésil"],
+    "indexReponseCorrect": 1,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est l'effet des forêts sur le cycle du carbone ?",
+    "options": ["Émission de CO2", "Absorption du CO2", "Augmentation de l'ozone", "Réduction de la photosynthèse"],
+    "indexReponseCorrect": 1,
+    "theme": "Biodiversité",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est le principal effet des microplastiques dans les chaînes alimentaires marines ?",
+    "options": ["Contamination des poissons", "Perturbation du cycle de l'oxygène", "Acidification des océans", "Réchauffement des eaux"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Comment appelle-t-on le phénomène où une espèce invasive domine un écosystème et perturbe la biodiversité locale ?",
+    "options": ["Ségrégation écologique", "Compétition interspécifique", "Déplacement écologique", "Spéciation invasive"],
+    "indexReponseCorrect": 2,
+    "theme": "Biodiversité",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est l'impact principal de l'élevage intensif sur l'environnement ?",
+    "options": ["Réchauffement climatique", "Déforestation", "Érosion des sols", "Pollution de l'eau"],
+    "indexReponseCorrect": 3,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est l'avantage principal de l'énergie marémotrice ?",
+    "options": ["Production stable et prévisible", "Faible coût", "Peu d'impact environnemental", "Facilité d'installation"],
+    "indexReponseCorrect": 0,
+    "theme": "Énergie",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Qu'est-ce que la déforestation importée ?",
+    "options": ["Déforestation due à l'importation de produits agricoles", "Importation de bois illégal", "Réimportation d'espèces invasives", "Déforestation causée par la surexploitation"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est le principal impact de la fonte du pergélisol ?",
+    "options": ["Augmentation de l'acidité des sols", "Libération de méthane", "Fonte des glaciers", "Augmentation du niveau de la mer"],
+    "indexReponseCorrect": 1,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel pays a la plus grande capacité installée d'énergie éolienne ?",
+    "options": ["Chine", "États-Unis", "Allemagne", "Inde"],
+    "indexReponseCorrect": 0,
+    "theme": "Énergie",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quelle est la plus grande réserve mondiale de biodiversité ?",
+    "options": ["Forêt amazonienne", "Savane africaine", "Forêts boréales", "Récif de la Grande Barrière"],
+    "indexReponseCorrect": 0,
+    "theme": "Biodiversité",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est l'impact environnemental majeur des centrales à charbon ?",
+    "options": ["Émission de méthane", "Production de déchets toxiques", "Augmentation des températures locales", "Émission de CO2"],
+    "indexReponseCorrect": 3,
+    "theme": "Énergie",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel type d'énergie renouvelable est le plus sensible aux conditions météorologiques ?",
+    "options": ["Énergie solaire", "Énergie géothermique", "Énergie hydraulique", "Biomasse"],
+    "indexReponseCorrect": 0,
+    "theme": "Énergie",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est l'impact de la déforestation sur le cycle de l'eau ?",
+    "options": ["Réduction des précipitations", "Augmentation de l'évaporation", "Assèchement des rivières", "Perturbation des nappes phréatiques"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est le principal facteur de la perte de biodiversité mondiale ?",
+    "options": ["Changements climatiques", "Pollution", "Perte d'habitat", "Surpêche"],
+    "indexReponseCorrect": 2,
+    "theme": "Biodiversité",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel pays a le plus grand taux de reboisement ?",
+    "options": ["Chine", "Inde", "Costa Rica", "Canada"],
+    "indexReponseCorrect": 0,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel type d'énergie renouvelable a la plus grande densité énergétique ?",
+    "options": ["Énergie solaire", "Énergie éolienne", "Énergie nucléaire", "Énergie géothermique"],
+    "indexReponseCorrect": 3,
+    "theme": "Énergie",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est l'impact environnemental principal des grands barrages ?",
+    "options": ["Fragmentation des écosystèmes", "Diminution des ressources en eau", "Émissions de méthane", "Acidification des sols"],
+    "indexReponseCorrect": 0,
+    "theme": "Énergie",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est le principal contributeur aux émissions de méthane ?",
+    "options": ["Gaz naturel", "Agriculture", "Transport", "Production industrielle"],
+    "indexReponseCorrect": 1,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est le principal facteur limitant le développement de l'énergie nucléaire ?",
+    "options": ["Coût", "Sécurité", "Ressources limitées", "Pollution radioactive"],
+    "indexReponseCorrect": 1,
+    "theme": "Énergie",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est le principal impact de la pollution plastique sur les océans ?",
+    "options": ["Destruction des récifs coralliens", "Dégradation des habitats marins", "Contamination chimique", "Blanchiment des coraux"],
+    "indexReponseCorrect": 2,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quelle espèce invasive a perturbé les écosystèmes aquatiques des Grands Lacs nord-américains ?",
+    "options": ["Carpe asiatique", "Moule zébrée", "Poisson-lion", "Grenouille-taureau"],
+    "indexReponseCorrect": 1,
+    "theme": "Biodiversité",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel pays a la plus faible empreinte carbone par habitant parmi les grands émetteurs ?",
+    "options": ["Chine", "Inde", "Russie", "Brésil"],
+    "indexReponseCorrect": 1,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quel est l'effet principal des politiques de quotas de pêche ?",
+    "options": ["Augmentation des stocks de poissons", "Réduction de la biodiversité marine", "Diminution des prises illégales", "Augmentation des prix du poisson"],
+    "indexReponseCorrect": 0,
+    "theme": "Biodiversité",
+    "niveau": "Avancé"
+  },
+  {
+    "question": "Quelle est la principale cause de la désertification dans le monde ?",
+    "options": ["Surpâturage", "Érosion des sols", "Changements climatiques", "Déforestation"],
+    "indexReponseCorrect": 3,
+    "theme": "Environnement",
+    "niveau": "Avancé"
+  }
+]

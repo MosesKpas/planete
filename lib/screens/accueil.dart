@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:planete/screens/apropos.dart';
 import 'package:planete/screens/bibliotheque.dart';
 
 class AccueilPage extends StatefulWidget {
@@ -47,8 +48,7 @@ class _AccueilPageState extends State<AccueilPage> {
                     _buildBlock(Icons.explore, 'Explorer', Colors.teal),
                     _buildBlock(Icons.star, 'Favoris', Colors.amber),
                     _buildBlock(Icons.play_arrow, 'Commencer', Colors.blue),
-                    _buildBlock(
-                        Icons.settings, 'Paramètres', Colors.deepOrange),
+                    _buildBlock(Icons.info, 'À propos', Colors.deepOrange), // Remplacez Paramètres par À propos
                   ],
                 ),
               ),
@@ -58,6 +58,7 @@ class _AccueilPageState extends State<AccueilPage> {
       ),
     );
   }
+
   Widget _buildBlock(IconData icon, String label, Color color) {
     return GestureDetector(
       onTap: () {
@@ -66,6 +67,13 @@ class _AccueilPageState extends State<AccueilPage> {
             context,
             MaterialPageRoute(
               builder: (context) => const BibliothequePage(),
+            ),
+          );
+        } else if (label == 'À propos') { // Gérer le clic sur À propos
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const AProposPage(), // Votre page À propos
             ),
           );
         } else {

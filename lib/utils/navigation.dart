@@ -16,7 +16,7 @@ class _NavigationPageState extends State<NavigationPage> {
 
   final List<Widget> _pages = [
     const AccueilPage(),
-    const JeuxPage(),
+    JeuxPage(),
     const ProfilPage(),
   ];
 
@@ -33,8 +33,8 @@ class _NavigationPageState extends State<NavigationPage> {
       appBar: AppBar(
         title: const Text('Ma Planète'),
         backgroundColor: Colors.green.shade900,
+        centerTitle: true,
       ),
-      drawer: _buildDrawer(context), // Le drawer est ici
       body: PageView(
         controller: _pageController,
         onPageChanged: (index) {
